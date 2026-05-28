@@ -31,6 +31,6 @@ This parallel-processing spatial cluster is designed to optimize sparse matrix-v
 
 | Metric | Resource | Value | Utilization |
 | :--- | :--- | :--- | :--- |
-| **Area** | Slice LUTs | 2 | < 0.01% |
-| **Area** | Slice Registers | 1 | < 0.01% |
+| **Area** | Slice LUTs | 104 | 0.50% |
+| **Area** | Slice Registers | 33 | 0.08% |
 | **Timing** | Fmax | Unconstrained | N/A |
