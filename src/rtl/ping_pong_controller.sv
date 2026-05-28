@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 module ping_pong_controller (
     input  logic clk,
     input  logic rst_n,

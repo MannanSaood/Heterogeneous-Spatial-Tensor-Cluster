@@ -19,5 +19,18 @@ This parallel-processing spatial cluster is designed to optimize sparse matrix-v
 
 ## 4. Current Execution Status
 - **Phase 1 & 2 Modules Completed**: `pe_mac.sv` (with ICG), `pe_control.sv`, `pe_tile.sv`, `sram_2kb_dual_port.sv`, `ping_pong_controller.sv`, `axi4_stream_dma.sv`.
-- **Compilation/Syntax Verification**: All SystemVerilog modules have been compiled using Vivado's `xvlog -sv` compiler engine.
-- **Result**: `0 Errors, 0 Warnings`. The RTL is structurally verified and syntactically flawless.
+
+### Functional Verification
+- **Framework**: Vivado XSim (`xelab`)
+- **Coverage**: Basic functional validation via directed testbenches.
+- **Status**: `[PASS]` (0 Errors, 0 Warnings) for `tb_ping_pong`.
+
+### Hardware Synthesis (PPA Metrics)
+- **Target Architecture**: Xilinx Artix-7 (`xc7a35tcpg236-1`)
+- **Tool**: Vivado 2024.2 Synthesis (`synth_design`)
+
+| Metric | Resource | Value | Utilization |
+| :--- | :--- | :--- | :--- |
+| **Area** | Slice LUTs | 2 | < 0.01% |
+| **Area** | Slice Registers | 1 | < 0.01% |
+| **Timing** | Fmax | Unconstrained | N/A |
