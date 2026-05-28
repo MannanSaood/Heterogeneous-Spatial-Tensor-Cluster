@@ -1,0 +1,12 @@
+# Vivado and XSim artifacts
+*.log
+*.jou
+*.str
+*.pb
+.Xil/
+xsim.dir/
+vivado_proj/
+vivado_synth_proj/
+reports/
+webtalk*
+*.vcd
